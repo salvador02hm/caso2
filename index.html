@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imagenes/isil+.png" alt="logo" height="50"></img>
+        </header>
+        <h1>Pseudocódigo con estructuras condicionales anidadas</h1>
+            <div id="Caso">
+                <img src="imagenes/caso2.png" alt="caso2">
+            </div>
+            <div id="solucion">
+                <script>
+                    //Declaracion de varialbles
+                    var producido,defectuosos,msj;
+
+                    //Fase de lectura 
+                    producido=parseInt(prompt("Ingrese el número de tornillos producidos"));
+                    defectuosos=parseInt(prompt("Ingrese el número de tornillos defectuosos"))
+
+                    //Fase de procesamiento de datos
+                    if (defectuosos>=200 && producido<=10000) {
+                        msj="Grado 5";
+                    } else {
+                        if (defectuosos<200 && producido<=10000) {
+                            msj="Grado 6";
+                        } else {
+                            if (defectuosos>=200 && producido>10000) {
+                                msj="Grado 7";
+                            } else {
+                                msj="Grado 8";
+                            }
+                        }
+                    }
+
+                    //Fase de salida
+                    document.write("El grado de eficiencia es: "+msj);
+
+                </script>
+            </div>
+     </main>
+    
+</body>
+</html>
